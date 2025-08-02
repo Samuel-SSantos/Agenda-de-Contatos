@@ -46,10 +46,10 @@ def adicionar_contato(nome, telefone, email):
          else:
             print("Contato não encontrado!\n")
 
-   def remover_contato()
+   def remover_contato():
       nome = input("Digite o nome do contato que deseja remover: ")
       for contato in agenda:
-         if contato['nome'] == nome
+         if contato['nome'] == nome:
          agenda.remove(contato)
          print("Contato removido!")
          return
@@ -83,11 +83,14 @@ while True:
    elif opcao == '4':
       remover_contato()
 
-   elif opcao == '5':
-      print("Encerra a Agenda!")
+   elif opcao =='5':
+      salvar_agenda()
+
+   elif opcao == '6':
+      print("Encerrando a Agenda!")
       break
    else:
-      print("Opção ")
+      print("Opção inválida! Digite novamente!")
       
       
 
