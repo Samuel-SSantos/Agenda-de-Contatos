@@ -75,13 +75,13 @@ while True:
      email = input("Digite o email do contato: ")
     
    elif opcao == '2':
-      exibir_contatos()
+      exibir_contatos() # type: ignore
 
    elif opcao == '3':
-      editar_contato()
+      editar_contato() # type: ignore
 
    elif opcao == '4':
-      remover_contato()
+      remover_contato() # type: ignore
 
    elif opcao =='5':
       salvar_agenda()
