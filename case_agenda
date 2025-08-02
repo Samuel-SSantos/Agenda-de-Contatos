@@ -1,0 +1,37 @@
+agenda = []
+
+while True:
+   print("\n-- Menu da Agenda") 
+   print("1. Adicioar Contato")
+   print("2. Exibir Agenda")
+   print("3. Sair")
+
+   opcao = input("Digite a opção desejada: ")
+
+   if opcao == '1':
+     nome = input("Digite o nome do contato: ")
+     telefone = input("Digite o telefone do contato: ")
+     email = input("Digite o email do contato: ")
+
+     contato = {
+         'nome': nome,
+         'telefone': telefone,
+         'email': email
+         }
+
+     agenda.append(contato)
+     print(f"Contato {nome} adicionado!")
+
+    elif opcao == '2':
+      print("\n Contato adicionado:")
+      print("Nome: ", contato['nome'])
+      print("Telefone: ", contato['telefone'])
+      print("Email:", contato['email'])
+
+
+
+
+
+
+
+
